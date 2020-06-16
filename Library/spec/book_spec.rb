@@ -13,7 +13,13 @@ describe Book do
 
   it 'is able to be loaned' do
     book = Book.new('default_name', 'default_author')
-    book.loan
-    expect(book).to respond_to :loan
+    book.loan_book
+    expect(book).to respond_to :loan_book
+  end
+
+  it "is able to be returned" do
+    book = Book.new('default_name', 'default_author')
+    book.return_book
+    expect(book).to respond_to :return_book
   end
 end

@@ -6,6 +6,9 @@ class Book
     @author = author
   end
 
-  def loan
+  def loan_book
+  end
+
+  def return_book
   end
 end
