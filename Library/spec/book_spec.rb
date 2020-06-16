@@ -17,7 +17,7 @@ describe Book do
     expect(book).to respond_to :loan_book
   end
 
-  it "is able to be returned" do
+  it 'is able to be returned' do
     book = Book.new('default_name', 'default_author')
     book.return_book
     expect(book).to respond_to :return_book
